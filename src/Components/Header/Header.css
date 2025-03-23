@@ -4,9 +4,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 90vh;
+    min-height: 100vh;
     text-align: center;
-    padding: 40px 20px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .content {
@@ -16,6 +18,8 @@
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(10px);
     text-align: center;
+    width: 90%;
+    max-width: 800px;
 }
 
 /* Heading */
@@ -26,6 +30,9 @@
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 15px;
 }
 
 /* Subtitle */
@@ -34,6 +41,7 @@
     color: #00eeffef;
     font-weight: 500;
     margin-top: 10px;
+    margin-bottom: 15px;
 }
 
 /* Resume & Social Section */
@@ -42,7 +50,8 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin-top: 30px;
+    margin-top: 25px;
+    flex-wrap: wrap;
 }
 
 /* Resume Button */
@@ -56,6 +65,7 @@
     text-decoration: none;
     font-size: 1.2rem;
     transition: all 0.3s ease;
+    display: inline-block;
 }
 
 .download-btn:hover {
@@ -69,6 +79,8 @@
 .social-icons {
     display: flex;
     gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .social-icon {
@@ -91,30 +103,110 @@ span {
 
 /* Mobile Responsive */
 @media (max-width: 768px) {
-    .content {
-        padding: 40px 20px;
-        box-shadow: none;
+    .header {
+        min-height: 100vh; /* Keep full height but eliminate scrolling */
+        padding: 15px;
     }
-
+    
+    .content {
+        padding: 25px 20px;
+        width: 95%;
+    }
+    
     .header h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
+        margin-bottom: 10px;
     }
     
     .header p {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+        margin-top: 5px;
+        margin-bottom: 10px;
     }
-
+    
     .resume-socials {
-        flex-direction: column;
+        margin-top: 20px;
+        gap: 15px;
     }
-
+    
     .download-btn {
-        font-size: 1rem;
         padding: 10px 20px;
+        font-size: 1rem;
     }
-
+    
     .social-icon {
         width: 40px;
         height: 40px;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .header {
+        min-height: 100vh; /* Maintain full height */
+        padding: 10px;
+    }
+    
+    .content {
+        padding: 20px 15px;
+    }
+    
+    .header h1 {
+        font-size: 2.2rem;
+        letter-spacing: 1px;
+        margin-bottom: 8px;
+    }
+    
+    .header p {
+        font-size: 0.9rem;
+        margin-top: 5px;
+        margin-bottom: 8px;
+    }
+    
+    .resume-socials {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 15px;
+    }
+    
+    .social-icons {
+        margin-top: 10px;
+    }
+    
+    .download-btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+        width: auto;
+        max-width: 200px;
+    }
+    
+    .social-icon {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Extra Small Mobile Devices */
+@media (max-width: 350px) {
+    .header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .header p {
+        font-size: 0.8rem;
+    }
+    
+    .content {
+        padding: 15px 10px;
+    }
+    
+    .download-btn {
+        padding: 7px 14px;
+        font-size: 0.8rem;
+    }
+    
+    .social-icon {
+        width: 30px;
+        height: 30px;
     }
 }

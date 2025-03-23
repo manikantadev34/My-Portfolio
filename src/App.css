@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  padding: 0;
+ 
+  background: #0a0f24;
+  font-family: Arial, sans-serif;
+}
+
+.main-content {
+  padding: 0;
+}

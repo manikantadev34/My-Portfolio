@@ -1,0 +1,118 @@
+/* Projects Section */
+.projects {
+    padding: 4rem 2rem;
+    background: linear-gradient(135deg, #0a0f24, #1b2945);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+.projects h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: #36d1dc;
+}
+
+/* Project Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Project Card */
+.project-card {
+    perspective: 1000px;
+    width: 100%;
+    height: 220px;
+}
+
+/* Card Inner */
+.card-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+/* Flip Effect */
+.project-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Card Front & Back */
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(54, 209, 220, 0.2);
+    padding: 1.5rem;
+    text-align: center;
+}
+
+/* Card Front */
+.card-front {
+    background: linear-gradient(135deg, #ff416c, #ff4b2b);
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Card Back */
+.card-back {
+    background: #1b2945;
+    color: #ddd;
+    transform: rotateY(180deg);
+    flex-direction: column;
+}
+
+/* Project Description */
+.card-back p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+}
+
+/* Project Link */
+.project-link {
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(135deg, #36d1dc, #5b86e5);
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, background 0.3s ease;
+    display: inline-block;
+}
+
+/* Hover Effect */
+.project-link:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, #5b86e5, #36d1dc);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .projects h2 {
+        font-size: 2.2rem;
+    }
+
+    .projects-grid {
+        grid-template-columns: repeat(1, minmax(250px, 1fr));
+    }
+
+    .project-card {
+        height: 200px;
+    }
+}

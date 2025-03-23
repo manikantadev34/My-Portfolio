@@ -1,0 +1,113 @@
+/* Contact Section */
+.contact {
+    padding: 4rem 3rem;
+    background: linear-gradient(135deg, #090d2c, #1a1f46);
+    color: white;
+    text-align: center;
+}
+
+/* Heading */
+.contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #12c2e9; /* Neon Cyan */
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.1); /* Glassmorphism Effect */
+    padding: 2rem;
+    border-radius: 15px;
+    backdrop-filter: blur(10px); /* Blurred Glass Effect */
+    box-shadow: 0 8px 20px rgba(54, 209, 220, 0.2);
+    transition: all 0.3s ease;
+}
+
+/* Form Group */
+.form-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+/* Label */
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: white;
+}
+
+/* Input and Textarea */
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder Color */
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Focus Effect */
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #12c2e9;
+    box-shadow: 0 0 12px #12c2e9;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* Submit Button */
+button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background: linear-gradient(45deg, #36d1dc, #5b86e5);
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Button Hover */
+button:hover {
+    background: linear-gradient(45deg, #5b86e5, #12c2e9);
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px rgba(54, 209, 220, 0.7);
+}
+
+/* Button Active */
+button:active {
+    transform: scale(0.98);
+    box-shadow: 0 0 10px rgba(54, 209, 220, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .contact h2 {
+        font-size: 2.2rem;
+    }
+
+    .contact-form {
+        padding: 1.5rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}

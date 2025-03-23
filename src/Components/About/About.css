@@ -1,0 +1,62 @@
+/* General Styling */
+.about-me {
+    background: linear-gradient(135deg, #0c163a, #1a2b5e);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+/* About Me Container */
+.about-container {
+    max-width: 900px;
+    padding: 3rem;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(54, 209, 220, 0.3);
+}
+
+/* Heading */
+.about-me h2 {
+    font-size: 2.8rem;
+    text-transform: uppercase;
+    color: #36d1dc;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+}
+
+/* Paragraph */
+.about-me p {
+    font-size: 1.3rem;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 400;
+}
+
+/* Highlighted Text */
+.about-me b {
+    color: #36d1dc;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about-container {
+        padding: 2rem;
+        box-shadow: none;
+    }
+
+    .about-me h2 {
+        font-size: 2.2rem;
+    }
+
+    .about-me p {
+        font-size: 1.2rem;
+    }
+}

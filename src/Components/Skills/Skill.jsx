@@ -9,6 +9,8 @@ const skills = [
     { name: 'React', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' },
     { name: 'MySQL', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg' },
     { name: 'MongoDB', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg' },
+    {name:'Node js',logo:'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg'},
+    {name:'Express js',logo:'https://media.licdn.com/dms/image/v2/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=4jKdvoBWv587Ek7xruyjjOaKoMjvAKw3eAN4MKlJZPc'}
 ];
 
 export default function Skill() {
